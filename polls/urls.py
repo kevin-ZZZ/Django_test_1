@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 
+
+app_name = 'polls'
 urlpatterns = [
     path(r'redirect', views.redirect, name='redirect'),
     path(r'json', views.return_json, name='json'),
